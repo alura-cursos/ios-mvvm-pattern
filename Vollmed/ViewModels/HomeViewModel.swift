@@ -22,21 +22,21 @@ struct HomeViewModel {
     
     // MARK: - Class methods
     
-    func getSpecialists() async throws -> [Specialist] {
-        do {
-            if let fetchedSpecialists = try await service.getAllSpecialists() {
-                return fetchedSpecialists
-            }
-            return []
-        } catch {
-            print("Ocorreu um problema para obter os especialistas")
+    func getSpecialists() async throws -> [Specialist]? {
+        let result = try await service.getAllSpecialists()
+        
+        switch result {
+        case .success(let response):
+            return response
+        case .failure(let error):
             throw error
         }
     }
     
     func logout() async {
+        let oldService = WebService()
         do {
-            let response = try await service.logoutPatient()
+            let response = try await oldService.logoutPatient()
             if response {
                 authManager.removeToken()
                 authManager.removePatientID()
