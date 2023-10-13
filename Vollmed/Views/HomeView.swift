@@ -10,22 +10,9 @@ import SwiftUI
 struct HomeView: View {
     
     let service = WebService()
-    var authManager = AuthenticationManager.shared
     var viewModel = HomeViewModel()
     
     @State private var specialists: [Specialist] = []
-    
-    func logout() async {
-        do {
-            let logoutSuccessful = try await service.logoutPatient()
-            if logoutSuccessful {
-                authManager.removeToken()
-                authManager.removePatientID()
-            }
-        } catch {
-            print("Ocorreu um erro no logout: \(error)")
-        }
-    }
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -67,7 +54,7 @@ struct HomeView: View {
             ToolbarItem(placement: .topBarTrailing) {
                 Button(action: {
                     Task {
-                        await logout()
+                        await viewModel.logout()
                     }
                 }, label: {
                     HStack(spacing: 2) {
