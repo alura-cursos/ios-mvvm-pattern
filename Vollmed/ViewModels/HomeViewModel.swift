@@ -11,8 +11,14 @@ struct HomeViewModel {
     
     // MARK: - Attributes
     
-    let service = WebService()
+    let service: HomeServiceable
     var authManager = AuthenticationManager.shared
+    
+    // MARK: - Init
+    
+    init(service: HomeServiceable) {
+        self.service = service
+    }
     
     // MARK: - Class methods
     
