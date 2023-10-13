@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18D21FB02AD0823B00AE9B81 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FAF2AD0823B00AE9B81 /* Endpoint.swift */; };
-		18D21FB22AD0861A00AE9B81 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FB12AD0861A00AE9B81 /* RequestMethod.swift */; };
-		18D21FB42AD086D200AE9B81 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FB32AD086D200AE9B81 /* RequestError.swift */; };
-		18D21FB62AD08E2600AE9B81 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FB52AD08E2600AE9B81 /* HTTPClient.swift */; };
+		18D21FC42AD0AAFE00AE9B81 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FC02AD0AAFE00AE9B81 /* HTTPClient.swift */; };
+		18D21FC52AD0AAFE00AE9B81 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FC12AD0AAFE00AE9B81 /* RequestMethod.swift */; };
+		18D21FC62AD0AAFE00AE9B81 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FC22AD0AAFE00AE9B81 /* RequestError.swift */; };
+		18D21FC72AD0AAFE00AE9B81 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FC32AD0AAFE00AE9B81 /* Endpoint.swift */; };
 		18EBCB962AD0586200127FF7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBCB952AD0586200127FF7 /* HomeViewModel.swift */; };
 		484BEEFD2AB0F5750033C07A /* Specialist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BEEFC2AB0F5750033C07A /* Specialist.swift */; };
 		484BEEFF2AB0F59D0033C07A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BEEFE2AB0F59D0033C07A /* WebService.swift */; };
@@ -38,10 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18D21FAF2AD0823B00AE9B81 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = ../../../../../Documents/Endpoint.swift; sourceTree = "<group>"; };
-		18D21FB12AD0861A00AE9B81 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestMethod.swift; path = ../../../../../Documents/RequestMethod.swift; sourceTree = "<group>"; };
-		18D21FB32AD086D200AE9B81 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestError.swift; path = ../../../../../Documents/RequestError.swift; sourceTree = "<group>"; };
-		18D21FB52AD08E2600AE9B81 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = ../../../../../Documents/HTTPClient.swift; sourceTree = "<group>"; };
+		18D21FC02AD0AAFE00AE9B81 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		18D21FC12AD0AAFE00AE9B81 /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		18D21FC22AD0AAFE00AE9B81 /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		18D21FC32AD0AAFE00AE9B81 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		18EBCB952AD0586200127FF7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		484BEEFC2AB0F5750033C07A /* Specialist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specialist.swift; sourceTree = "<group>"; };
 		484BEEFE2AB0F59D0033C07A /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -83,22 +83,11 @@
 		18D21FA92AD07BA600AE9B81 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				18D21FAA2AD07BBB00AE9B81 /* Base */,
+				18D21FBF2AD0AAFE00AE9B81 /* Base */,
 				18D21FAB2AD07BC500AE9B81 /* Endpoints */,
 				18D21FAC2AD07BD200AE9B81 /* Services */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		18D21FAA2AD07BBB00AE9B81 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				18D21FAF2AD0823B00AE9B81 /* Endpoint.swift */,
-				18D21FB12AD0861A00AE9B81 /* RequestMethod.swift */,
-				18D21FB32AD086D200AE9B81 /* RequestError.swift */,
-				18D21FB52AD08E2600AE9B81 /* HTTPClient.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		18D21FAB2AD07BC500AE9B81 /* Endpoints */ = {
@@ -113,6 +102,17 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		18D21FBF2AD0AAFE00AE9B81 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				18D21FC02AD0AAFE00AE9B81 /* HTTPClient.swift */,
+				18D21FC12AD0AAFE00AE9B81 /* RequestMethod.swift */,
+				18D21FC22AD0AAFE00AE9B81 /* RequestError.swift */,
+				18D21FC32AD0AAFE00AE9B81 /* Endpoint.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		18EBCB942AD0584100127FF7 /* ViewModels */ = {
@@ -299,7 +299,6 @@
 			files = (
 				488A6A232AB92BAE003A2CAD /* Patient.swift in Sources */,
 				18EBCB962AD0586200127FF7 /* HomeViewModel.swift in Sources */,
-				18D21FB62AD08E2600AE9B81 /* HTTPClient.swift in Sources */,
 				488A6A1B2AB90ED6003A2CAD /* Appointment.swift in Sources */,
 				488A6A132AB8FB3D003A2CAD /* Date+.swift in Sources */,
 				488A6A2B2AB93472003A2CAD /* KeychainHelper.swift in Sources */,
@@ -309,18 +308,19 @@
 				484BEF052AB0F7970033C07A /* HomeView.swift in Sources */,
 				488A6A1D2AB91386003A2CAD /* CancelAppointmentView.swift in Sources */,
 				488A6A2E2AB93514003A2CAD /* AuthenticationManager.swift in Sources */,
-				18D21FB42AD086D200AE9B81 /* RequestError.swift in Sources */,
+				18D21FC62AD0AAFE00AE9B81 /* RequestError.swift in Sources */,
 				484BEEFD2AB0F5750033C07A /* Specialist.swift in Sources */,
 				488A6A272AB93065003A2CAD /* UserDefaultsHelper.swift in Sources */,
 				484BEF012AB0F6090033C07A /* ButtonView.swift in Sources */,
 				488A6A1F2AB91FF1003A2CAD /* SignInView.swift in Sources */,
+				18D21FC72AD0AAFE00AE9B81 /* Endpoint.swift in Sources */,
 				484BEF032AB0F7080033C07A /* SpecialistCardView.swift in Sources */,
-				18D21FB22AD0861A00AE9B81 /* RequestMethod.swift in Sources */,
+				18D21FC52AD0AAFE00AE9B81 /* RequestMethod.swift in Sources */,
 				484BEEFF2AB0F59D0033C07A /* WebService.swift in Sources */,
-				18D21FB02AD0823B00AE9B81 /* Endpoint.swift in Sources */,
 				488A6A212AB920F1003A2CAD /* SignUpView.swift in Sources */,
 				48539DED2AB0F47C005BD7C9 /* VollmedApp.swift in Sources */,
 				488A6A252AB92ED9003A2CAD /* Login.swift in Sources */,
+				18D21FC42AD0AAFE00AE9B81 /* HTTPClient.swift in Sources */,
 				488A6A192AB90DD4003A2CAD /* MyAppointmentsView.swift in Sources */,
 				488A6A102AB8F9AA003A2CAD /* ScheduleAppointmentView.swift in Sources */,
 			);
