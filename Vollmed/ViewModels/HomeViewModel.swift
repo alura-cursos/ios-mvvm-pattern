@@ -21,7 +21,6 @@ struct HomeViewModel {
             if let fetchedSpecialists = try await service.getAllSpecialists() {
                 return fetchedSpecialists
             }
-            
             return []
         } catch {
             print("Ocorreu um problema para obter os especialistas")
@@ -40,5 +39,4 @@ struct HomeViewModel {
             print("ocorreu um erro no logout: \(error)")
         }
     }
-    
 }

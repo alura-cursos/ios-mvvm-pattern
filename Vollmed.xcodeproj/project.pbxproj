@@ -72,6 +72,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18D21FA92AD07BA600AE9B81 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				18D21FAA2AD07BBB00AE9B81 /* Base */,
+				18D21FAB2AD07BC500AE9B81 /* Endpoints */,
+				18D21FAC2AD07BD200AE9B81 /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		18D21FAA2AD07BBB00AE9B81 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		18D21FAB2AD07BC500AE9B81 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		18D21FAC2AD07BD200AE9B81 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		18EBCB942AD0584100127FF7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +181,7 @@
 				484BEEFB2AB0F56C0033C07A /* Services */,
 				484BEEFA2AB0F5680033C07A /* Models */,
 				484BEEF82AB0F55F0033C07A /* Views */,
+				18D21FA92AD07BA600AE9B81 /* Networking */,
 				48539DEC2AB0F47C005BD7C9 /* VollmedApp.swift */,
 				48539DEE2AB0F47C005BD7C9 /* ContentView.swift */,
 				48539DF02AB0F47D005BD7C9 /* Assets.xcassets */,
