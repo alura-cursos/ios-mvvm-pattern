@@ -14,6 +14,7 @@
 		18D21FC92AD0AD8500AE9B81 /* HomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FC82AD0AD8500AE9B81 /* HomeEndpoint.swift */; };
 		18D21FCD2AD189C400AE9B81 /* HomeNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FCC2AD189C400AE9B81 /* HomeNetworkingService.swift */; };
 		18D21FCF2AD191FC00AE9B81 /* AuthenticationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FCE2AD191FC00AE9B81 /* AuthenticationEndpoint.swift */; };
+		18D21FD12AD1959800AE9B81 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21FD02AD1959800AE9B81 /* AuthenticationService.swift */; };
 		18EBCB962AD0586200127FF7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBCB952AD0586200127FF7 /* HomeViewModel.swift */; };
 		484BEEFD2AB0F5750033C07A /* Specialist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BEEFC2AB0F5750033C07A /* Specialist.swift */; };
 		484BEEFF2AB0F59D0033C07A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BEEFE2AB0F59D0033C07A /* WebService.swift */; };
@@ -48,6 +49,7 @@
 		18D21FC82AD0AD8500AE9B81 /* HomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoint.swift; sourceTree = "<group>"; };
 		18D21FCC2AD189C400AE9B81 /* HomeNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkingService.swift; sourceTree = "<group>"; };
 		18D21FCE2AD191FC00AE9B81 /* AuthenticationEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEndpoint.swift; sourceTree = "<group>"; };
+		18D21FD02AD1959800AE9B81 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		18EBCB952AD0586200127FF7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		484BEEFC2AB0F5750033C07A /* Specialist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specialist.swift; sourceTree = "<group>"; };
 		484BEEFE2AB0F59D0033C07A /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				18D21FCC2AD189C400AE9B81 /* HomeNetworkingService.swift */,
+				18D21FD02AD1959800AE9B81 /* AuthenticationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				48539DEF2AB0F47C005BD7C9 /* ContentView.swift in Sources */,
 				488A6A152AB8FB86003A2CAD /* String+.swift in Sources */,
 				484BEF052AB0F7970033C07A /* HomeView.swift in Sources */,
+				18D21FD12AD1959800AE9B81 /* AuthenticationService.swift in Sources */,
 				488A6A1D2AB91386003A2CAD /* CancelAppointmentView.swift in Sources */,
 				488A6A2E2AB93514003A2CAD /* AuthenticationManager.swift in Sources */,
 				18D21FC62AD0AAFE00AE9B81 /* RequestError.swift in Sources */,
